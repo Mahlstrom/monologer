@@ -82,7 +82,7 @@ abstract class LOG
 
             $handler = new StreamHandler('php://stdout', $logLevel);
             $handler->setFormatter(new ColoredLineFormatter(new MahlLight(), $formatString));
-            $log = new Logger('DEMO');
+            $log = new Logger($name);
             $log->pushProcessor(new MemoryUsageFixedProcessor());
             $log->pushProcessor(new ShortLevel());
             $log->pushHandler($handler);
