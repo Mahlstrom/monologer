@@ -1,0 +1,22 @@
+{
+  "name": "mahlstrom/monologer",
+  "description": "My logging package",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Magnus Ahlstrom",
+      "email": "magnus@atuin.se"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "monolog/monolog": "~1.13",
+    "bramus/monolog-colored-line-formatter": "~2.0"
+  },
+  "autoload": {
+    "classmap": ["src/classes/"],
+    "psr-4": {
+      "mahlstrom\\monolog\\": "src"
+    }
+  }
+}
