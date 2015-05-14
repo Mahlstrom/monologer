@@ -13,7 +13,7 @@ class MemoryUsageFixedProcessor extends MemoryUsageProcessor
     public function __invoke(array $record)
     {
         $record = parent::__invoke($record);
-        $record['extra']['memory_usage']=sprintf('%7s',$record['extra']['memory_usage']);
+        $record['extra']['memory_usage']=sprintf('%9s',$record['extra']['memory_usage']);
         return $record;
     }
 }

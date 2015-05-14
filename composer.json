@@ -16,7 +16,7 @@
   "autoload": {
     "classmap": ["src/classes/"],
     "psr-4": {
-      "mahlstrom\\monolog\\": "src"
+      "mahlstrom\\monolog\\": "src/monolog"
     }
   }
 }
